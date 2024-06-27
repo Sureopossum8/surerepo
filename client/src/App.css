@@ -1,0 +1,93 @@
+/* App.css */
+
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+/* App.css */
+
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+/* Header */
+header {
+  background-color: #1e73be; /* Azul */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #343a40; /* Fondo oscuro para el Navbar */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Tamaño de fuente más grande para la marca */
+  margin-right: 1rem; /* Espaciado a la derecha */
+  color: white; /* Color de texto blanco para la marca */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos del navbar */
+  justify-content: flex-start; /* Alinea los elementos del navbar a la izquierda */
+  width: 100%; /* Asegura que el navbar ocupe todo el ancho disponible */
+  padding-left: 0; /* Elimina el padding izquierdo por defecto */
+}
+
+.navbar-nav .nav-item {
+  list-style: none; /* Elimina los estilos de lista por defecto */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem; /* Tamaño de fuente normal para los enlaces */
+  margin-right: 1rem; /* Espacio a la derecha de cada enlace */
+  color: white; /* Color de texto blanco para los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  transition: color 0.3s ease; /* Transición suave para el color del texto */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #adb5bd; /* Color de texto gris claro al hacer hover */
+}
+
+.navbar-toggler {
+  border: none; /* Elimina el borde del botón del toggler */
+  color: white; /* Color de texto blanco */
+}
+
+
+
+/* Main */
+main {
+  padding: 20px;
+}
+
+/* Botón Agregar Horario */
+button.agregar-btn {
+  background-color: #FFC107; /* Amarillo */
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button.agregar-btn:hover {
+  background-color: #e0a800; /* Amarillo más oscuro */
+}

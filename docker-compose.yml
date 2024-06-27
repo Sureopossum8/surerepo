@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "3002:3002"  # Puerto del contenedor:Puerto del host
+    volumes:
+      - /c/SistemaHorariosUta:/app  # Ajusta la ruta del volumen según tu proyecto
+    depends_on:
+      - db
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_USER=oscar
+      - MYSQL_PASSWORD=ADMIN
+      - MYSQL_DATABASE=sistemahorarios
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: ADMIN
+      MYSQL_DATABASE: sistemahorarios
+      MYSQL_USER: oscar
+      MYSQL_PASSWORD: ADMIN
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3307:3306"  # Puerto del contenedor:Puerto del host
+
+volumes:
+  db_data:
